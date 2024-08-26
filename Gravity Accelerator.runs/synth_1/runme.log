@@ -1,0 +1,521 @@
+
+*** Running vivado
+    with args -log gravity_accelerator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gravity_accelerator.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gravity_accelerator.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 465.531 ; gain = 181.500
+Command: synth_design -top gravity_accelerator -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8972
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 913.207 ; gain = 444.703
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11166] signed/unsigned conversion for real expression [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:80]
+INFO: [Synth 8-6157] synthesizing module 'gravity_accelerator' [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:23]
+WARNING: [Synth 8-451] negative shift count is treated as unsigned [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:82]
+WARNING: [Synth 8-451] negative shift count is treated as unsigned [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:83]
+WARNING: [Synth 8-451] negative shift count is treated as unsigned [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'gravity_accelerator' (0#1) [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:23]
+WARNING: [Synth 8-7137] Register vel_reg in module gravity_accelerator has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:91]
+WARNING: [Synth 8-7137] Register pos_reg in module gravity_accelerator has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:92]
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[31] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[30] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[29] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[28] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[27] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[26] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[25] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[24] driven by constant 0
+WARNING: [Synth 8-7129] Port obstacle_position_1[31] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[30] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[29] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[28] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[27] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[26] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[25] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[24] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[23] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[22] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[21] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[20] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[19] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[18] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[17] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[16] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[15] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[14] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[13] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[12] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[11] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[10] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[9] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[8] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[7] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[6] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[5] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[4] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[3] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[2] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[1] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[0] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[31] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[30] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[29] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[28] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[27] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[26] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[25] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[24] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[23] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[22] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[21] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[20] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[19] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[18] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[17] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[16] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[15] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[14] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[13] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[12] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[11] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[10] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[9] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[8] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[7] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[6] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[5] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[4] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[3] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[2] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[1] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_2[0] in module gravity_accelerator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1020.762 ; gain = 552.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1020.762 ; gain = 552.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1020.762 ; gain = 552.258
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1020.762 ; gain = 552.258
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   56 Bit       Adders := 4     
+	   3 Input   56 Bit       Adders := 3     
+	   2 Input   48 Bit       Adders := 3     
+	   5 Input   48 Bit       Adders := 1     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Multipliers : 
+	              32x37  Multipliers := 1     
+	              32x48  Multipliers := 4     
+	               5x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   56 Bit        Muxes := 4     
+	   2 Input   48 Bit        Muxes := 5     
+	   3 Input   48 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP pos1, operation Mode is: A*B.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: Generating DSP pos1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: Generating DSP pos1, operation Mode is: A*B.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: Generating DSP pos1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: Generating DSP pos1, operation Mode is: A*B.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: Generating DSP pos1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: operator pos1 is absorbed into DSP pos1.
+DSP Report: Generating DSP acc7, operation Mode is: A*B.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: Generating DSP acc7, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: Generating DSP acc7, operation Mode is: A*B.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: Generating DSP acc7, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: operator acc7 is absorbed into DSP acc7.
+DSP Report: Generating DSP acc2, operation Mode is: A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP acc2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: operator acc2 is absorbed into DSP acc2.
+DSP Report: Generating DSP vel1, operation Mode is: A*B.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: Generating DSP vel1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: Generating DSP vel1, operation Mode is: A*B.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: Generating DSP vel1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: Generating DSP vel1, operation Mode is: A*B.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: Generating DSP vel1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+DSP Report: operator vel1 is absorbed into DSP vel1.
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[31] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[30] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[29] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[28] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[27] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[26] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[25] driven by constant 0
+WARNING: [Synth 8-3917] design gravity_accelerator has port velocity[24] driven by constant 0
+WARNING: [Synth 8-7129] Port init_velocity[31] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port init_velocity[30] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port init_velocity[29] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port init_velocity[28] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port init_velocity[27] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port init_velocity[26] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port init_velocity[25] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port init_velocity[24] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port time_step[6] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port time_step[5] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port time_step[4] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port time_step[3] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port time_step[2] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port time_step[1] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port time_step[0] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[31] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[30] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[29] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[28] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[27] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[26] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[25] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[24] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[23] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[22] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[21] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[20] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[19] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[18] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[17] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[16] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[15] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[14] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[13] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[12] in module gravity_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port obstacle_position_1[11] in module gravity_accelerator is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'obstacle_collision_internal_reg[2]/Q' [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'obstacle_collision_internal_reg[1]/Q' [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'obstacle_collision_internal_reg[0]/Q' [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v:122]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1214.766 ; gain = 746.262
+---------------------------------------------------------------------------------
+ Sort Area is  acc2_d : 0 0 : 3500 6483 : Used 1 time 0
+ Sort Area is  acc2_d : 0 1 : 2983 6483 : Used 1 time 0
+ Sort Area is  acc7_0 : 0 0 : 3101 6356 : Used 1 time 0
+ Sort Area is  acc7_0 : 0 1 : 3255 6356 : Used 1 time 0
+ Sort Area is  acc2_6 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  acc2_6 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  acc2_8 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  acc2_8 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  acc2_c : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  acc2_c : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  acc7_3 : 0 0 : 2634 5397 : Used 1 time 0
+ Sort Area is  acc7_3 : 0 1 : 2763 5397 : Used 1 time 0
+ Sort Area is  acc2_9 : 0 0 : 2460 4789 : Used 1 time 0
+ Sort Area is  acc2_9 : 0 1 : 2329 4789 : Used 1 time 0
+ Sort Area is  pos1_15 : 0 0 : 3101 4743 : Used 1 time 0
+ Sort Area is  pos1_15 : 0 1 : 1642 4743 : Used 1 time 0
+ Sort Area is  pos1_16 : 0 0 : 3101 4743 : Used 1 time 0
+ Sort Area is  pos1_16 : 0 1 : 1642 4743 : Used 1 time 0
+ Sort Area is  vel1_10 : 0 0 : 3101 4743 : Used 1 time 0
+ Sort Area is  vel1_10 : 0 1 : 1642 4743 : Used 1 time 0
+ Sort Area is  vel1_12 : 0 0 : 3101 4743 : Used 1 time 0
+ Sort Area is  vel1_12 : 0 1 : 1642 4743 : Used 1 time 0
+ Sort Area is  pos1_17 : 0 0 : 2460 3970 : Used 1 time 0
+ Sort Area is  pos1_17 : 0 1 : 1510 3970 : Used 1 time 0
+ Sort Area is  vel1_13 : 0 0 : 2460 3970 : Used 1 time 0
+ Sort Area is  vel1_13 : 0 1 : 1510 3970 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gravity_accelerator | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 14     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 20     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 24     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 15     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 14     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | (PCIN>>17)+A*B | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1214.766 ; gain = 746.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1214.766 ; gain = 746.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gravity_accelerator | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 30     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 30     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 23     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 0      | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gravity_accelerator | PCIN>>17+A*B | 0      | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   744|
+|3     |DSP48E1 |    24|
+|4     |LUT1    |    66|
+|5     |LUT2    |   380|
+|6     |LUT3    |   331|
+|7     |LUT4    |   968|
+|8     |LUT5    |  1603|
+|9     |LUT6    |    92|
+|10    |FDCE    |   152|
+|11    |FDPE    |    56|
+|12    |LDC     |    56|
+|13    |IBUF    |   276|
+|14    |OBUF    |    67|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  4816|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 9 critical warnings and 262 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1219.379 ; gain = 750.875
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1232.422 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 824 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'gravity_accelerator' is not ideal for floorplanning, since the cellview 'gravity_accelerator' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1328.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  LDC => LDCE: 56 instances
+
+Access is denied.
+Synth Design complete | Checksum: ffe8b32
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 124 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 1328.312 ; gain = 862.781
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1328.312 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.runs/synth_1/gravity_accelerator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gravity_accelerator_utilization_synth.rpt -pb gravity_accelerator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 30 18:12:55 2024...
