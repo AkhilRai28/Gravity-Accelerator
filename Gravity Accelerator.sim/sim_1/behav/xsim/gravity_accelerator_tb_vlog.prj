@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Gravity Accelerator.srcs/sources_1/new/gravity_accelerator.v" \
+"../../../../Gravity Accelerator.srcs/sim_1/new/gravity_accelerator_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

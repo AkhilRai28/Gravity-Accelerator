@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Time: 0, Velocity:           x, Position:           x, Obstacle Collision: xxx
+Time: 155000, Velocity:           x, Position:           x, Obstacle Collision: 000
+$finish called at time : 350 ns : File "C:/Users/akhil/verilog/Gravity Accelerator/Gravity Accelerator.srcs/sim_1/new/gravity_accelerator_tb.v" Line 80
